@@ -330,12 +330,14 @@ nav ul,
     position: relative;
     z-index: 2;
     padding-right: 60px;
+    transition: all 0.2s ease-in;
 }
 
 
 body.va-opened .right-panel {
     width: calc(100%-260px);
 }
+
 .right-panel .wrap {
     background: #fff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
@@ -533,7 +535,7 @@ a.logo {
     line-height: 50px;
     text-align: center;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.5s ease-in;
+    transition: all 0.2s ease-in;
     float: right;
     position: fixed;
     right: 2rem;
@@ -703,11 +705,23 @@ a.logo {
     box-shadow: 1px 1px 20px rgba(0,0,0,0.1);
     border: solid 1px #eee;
     padding: 10px;
-    top: 100px;
+    top: 100%;
     bottom: 60px;
     right: 80px;
     z-index: 999;
     left: 0;
+    overflow: hidden;
+    width: 0px;
+    max-height: 0px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+body.va-opened #va-wrap .assistant-ui {
+    width: auto;
+    max-height: 100vh;
+    opacity: 1;
+    top: 100px;
 }
 
 .assistant-ui .chat-list {
@@ -833,7 +847,7 @@ a.logo {
     box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 }
 
-body.va-opened .page-wrap.row {
+.page-wrap.row {
     justify-content: flex-start;
 }
 
