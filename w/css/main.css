@@ -714,7 +714,8 @@ a.logo {
     width: 0px;
     max-height: 0px;
     opacity: 0;
-    transition: all 0.3s ease-in;
+    transition: opacity 0.3s ease-in, max-height 0.3s ease-in, top 0.3s ease-in;
+    padding: 0;
 }
 
 body.va-opened #va-wrap .assistant-ui {
@@ -722,6 +723,7 @@ body.va-opened #va-wrap .assistant-ui {
     max-height: 100vh;
     opacity: 1;
     top: 100px;
+    padding:  10px;
 }
 
 .assistant-ui .chat-list {
