@@ -22,6 +22,10 @@ $(document).ready(function() {
 		$(this).parents('.assistant-ui.infocus').removeClass('infocus');
 	});
 
+	$('.chat-field input').keypress(function(event) {
+		$(this).parents('.assistant-ui.infocus').removeClass('infocus');
+	});
+
 	$('.va-trigger').click(function(e) {
 		e.preventDefault();
 
