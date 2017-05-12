@@ -37,6 +37,14 @@ $(document).ready(function() {
 			$('body').addClass('va-opened');
 			$('.assistant-ui').removeClass('close');
 			$('section.right-panel').removeClass('col-10-half').addClass('col-7');
+
+			$('.chat-scroll').animate({
+				scrollTop: $('.chat-scroll').get(0).scrollHeight}, 2000
+			); 
+
 		}
 	});
+
+	
 });
+

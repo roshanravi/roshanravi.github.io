@@ -970,3 +970,8 @@ span.voice-icon {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.sankey {
+    padding: 10px;
+    border: solid 1px #eee;
+}
