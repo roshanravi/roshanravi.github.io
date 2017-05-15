@@ -283,9 +283,7 @@ textarea {
 
 
 body {
-    background: #d6e1e9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #d6e1e9, #c3cbd0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #d6e1e9, #c3cbd0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #e4ded7;
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
 }
@@ -462,6 +460,8 @@ a.logo {
 
 .top-nav ul li {
     display: inline-block;
+    height: 60px;
+    padding: 0 20px;
 }
 
 .top-nav ul.primary-nav > li > a,
@@ -469,6 +469,7 @@ a.logo {
     display: inline-block;
     height: 60px;
     line-height: 60px;
+    vertical-align: top;
 }
 
 .primary-nav li {
@@ -485,11 +486,11 @@ a.logo {
 
 .primary-nav li.active a {
     font-weight: 500;
-    color: #d75f8a;
+    color: #ed145b;
 }
 
 .primary-nav li a:hover {
-    color: #d75f8a;
+    color: #ed145b;
 }
 
 .primary-nav li a:after {
@@ -500,7 +501,7 @@ a.logo {
     width: 0;
     bottom: -1px;
     height: 3px;
-    background: #d75f8a;
+    background: #ed145b;
     transition: all 0.3s cubic-bezier(.91,.19,.26,.96);
 }
 
@@ -530,7 +531,7 @@ a.logo {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background: #3cb878;
+    background: #ed145b;
     color: #fff;
     line-height: 50px;
     text-align: center;
@@ -540,6 +541,10 @@ a.logo {
     position: fixed;
     right: 2rem;
     z-index: 9999;
+}
+
+body.va-opened #va-wrap .va-trigger {
+    background: #3cb878;
 }
 
 #va-wrap .va-trigger.pulse:not(.clicked) {
@@ -974,4 +979,124 @@ span.voice-icon {
 .sankey {
     padding: 10px;
     border: solid 1px #eee;
+}
+
+span.to-device-icon svg {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+
+span#toPhone {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.secondary-nav span.user-icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background: #3cb878;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+ul.secondary-nav {
+    position: relative;
+    padding-right: 40px;
+}
+
+.top-nav ul li.to-device-action {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.to-device-icon svg path, .to-device-icon svg polygon {
+    fill: #ed145b;
+}
+
+a:hover .to-device-icon svg path, a:hover .to-device-icon svg polygon {
+    fill: #fff;
+}
+
+.top-nav ul.secondary-nav li.to-device-action a {
+    background: #fbfbfb;
+    border-left: solid 1px #eee;
+}
+
+.top-nav ul.secondary-nav li.to-device-action a:hover {
+    background: #ed145b;
+    border-left: solid 1px #ed145b;
+}
+
+div#sankeyChart svg {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.3s ease-in;
+}
+
+div#sankeyChart:hover svg {
+    filter: grayscale(50%);
+    opacity: 1;
+}
+
+.secondary-nav li a:hover {
+    color: #3cb878;
+}
+
+body > .bg-img {
+    position: fixed;
+    position: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+body > .bg-img img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    filter: grayscale(70%) blur(5px);
+}
+
+#va-wrap .va-trigger > span * {
+    transition: all 0.2s ease-in-out;
+}
+
+#va-wrap .va-trigger > span {
+    position: relative;
+}
+
+#va-wrap .va-trigger .svg-icon svg {
+    position: absolute;
+    left: -3px;
+    top: -5px;
+}
+
+.va-opened #va-wrap .va-trigger .svg-icon svg {
+    fill-opacity: 0;
+}
+
+#va-wrap .va-trigger .close-icon .fa {
+    opacity: 0;
+}
+.va-opened #va-wrap .va-trigger .close-icon .fa {
+    opacity: 1;
+}
+
+#va-wrap .va-trigger > span.close-icon .fa {
+    font-size: 24px;
+    line-height: 49px;
 }
