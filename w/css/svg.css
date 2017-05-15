@@ -3,11 +3,6 @@ svg > g:hover * {
 	opacity: 1;
 }
 
-svg > g:hover ~ g,
-svg > g:hover + g {
-	opacity: 0.3;
-}
-
 svg > g {
 	cursor: pointer;
 }
