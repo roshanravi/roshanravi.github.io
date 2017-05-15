@@ -22,6 +22,10 @@
   width: calc(8.33333%*5);
 }
 
+
+.col-5-half {
+  width: calc(8.33333%*5.5);
+}
 .col-6 {
   width: calc(8.33333%*6);
 }

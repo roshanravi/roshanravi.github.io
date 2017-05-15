@@ -1100,3 +1100,7 @@ body > .bg-img img {
     font-size: 24px;
     line-height: 49px;
 }
+
+.top-nav ul li:first-child {
+    padding-left: 0;
+}
