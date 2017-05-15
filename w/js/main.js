@@ -45,9 +45,9 @@ $(document).ready(function() {
 		}
 	});
 
-	$('#sankeyChart').load('../img/sankey.svg');
+	$('#sankeyChart').load('js/sankey.svg');
 
-	$('#toPhone').load('../img/to-phone.svg');
+	$('#toPhone').load('js/to-phone.svg');
 
 	
 });

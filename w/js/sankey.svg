@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 820 510" style="enable-background:new 0 0 820 510;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#EEEEEE;stroke-miterlimit:10;}
+	.st1{opacity:0.7;}
+	.st2{font-family:'Roboto';}
+	.st3{font-size:10px;}
+	.st4{fill:#605ca8;}
+	.st5{fill:#9e9aec;}
+	.st6{fill:#FFFFFF;}
+	.st7{font-size:9px;}
+	.st8{font-family:'FontAwesome';}
+	.st9{font-size:20px;}
+	.st10{opacity:0.5;}
+	.st11{fill:#999999;}
+	.st12{font-family:'Roboto';}
+	.st13{font-size:24px;}
+	.st14{opacity:0.7;}
+	.st15{fill:#605ca8;}
+	.st16{fill:#9e9aec;}
+	.st17{fill:#999;}
+	.st18{fill:#ddd;}
+</style>
+<g id="grid">
+	<g>
+		<g id="Lines">
+			<path class="st0" d="M185,400"/>
+			<path class="st0" d="M295,55"/>
+			<line class="st0" x1="285" y1="55" x2="285" y2="400"/>
+			<line class="st0" x1="120" y1="55" x2="120" y2="400"/>
+			<line class="st0" x1="100" y1="55" x2="100" y2="400"/>
+			<line class="st0" x1="375" y1="55" x2="375" y2="400"/>
+			<line class="st0" x1="465" y1="55" x2="465" y2="400"/>
+			<line class="st0" x1="615" y1="55" x2="615" y2="400"/>
+		</g>
+		<g id="Lines_1_">
+			<path class="st0" d="M205,400"/>
+			<path class="st0" d="M315,55"/>
+			<line class="st0" x1="305" y1="55" x2="305" y2="400"/>
+			<line class="st0" x1="395" y1="55" x2="395" y2="400"/>
+			<line class="st0" x1="485" y1="55" x2="485" y2="400"/>
+			<line class="st0" x1="635" y1="55" x2="635" y2="400"/>
+		</g>
+	</g>
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 114.6445 442.0605)" class="st1 st2 st3">SHORTLIST</text>
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 299.6445 481.6064)" class="st1 st2 st3">SKILL ASSESSMENT</text>
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 389.6445 447.2266)" class="st1 st2 st3">INTERVIEWS</text>
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 479.6445 419.7705)" class="st1 st2 st3">OFFER</text>
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 629.6445 436.3428)" class="st1 st2 st3">ONBOARD</text>
+	<g>
+		<line class="st0" x1="120" y1="385" x2="285" y2="385"/>
+		<line class="st0" x1="305" y1="385" x2="375" y2="385"/>
+		<line class="st0" x1="395" y1="385" x2="465" y2="385"/>
+		<line class="st0" x1="485" y1="385" x2="615" y2="385"/>
+	</g>
+	<g>
+		<line class="st0" x1="120" y1="60" x2="285" y2="60"/>
+		<line class="st0" x1="305" y1="60" x2="375" y2="60"/>
+		<line class="st0" x1="395" y1="60" x2="465" y2="60"/>
+		<line class="st0" x1="485" y1="60" x2="615" y2="60"/>
+	</g>
+</g>
+<g id="left-labels">
+	<path class="st4" d="M69,369h30V269H69c-27.6,0-50,22.4-50,50v0C19,346.6,41.4,369,69,369z"/>
+	<g>
+		<rect x="100" y="70" class="st5" width="20" height="40.5"/>
+		<rect x="100" y="120" class="st5" width="20" height="50.5"/>
+		<rect x="100" y="180" class="st5" width="20" height="80.5"/>
+		<rect x="100" y="269" class="st5" width="20" height="100.5"/>
+	</g>
+	<text transform="matrix(1 0 0 1 68.8521 316)"><tspan x="0" y="0" class="st6 st2 st7">Job</tspan><tspan x="-13.4" y="10.8" class="st6 st2 st7">Portals</tspan></text>
+	<text transform="matrix(1 0 0 1 88.5107 326.0059)" class="st6 st8 st9"></text>
+	<path class="st4" d="M59.5,261H99v-81H59.5C37.1,180,19,198.1,19,220.5v0C19,242.9,37.1,261,59.5,261z"/>
+	<text transform="matrix(1 0 0 1 60.1553 216)"><tspan x="0" y="0" class="st6 st2 st7">Hiring</tspan><tspan x="-13.1" y="10.8" class="st6 st2 st7">Agencies</tspan></text>
+	<text transform="matrix(1 0 0 1 88.5107 226.0059)" class="st6 st8 st9"></text>
+	<path class="st4" d="M44,170h55v-50H44c-13.8,0-25,11.2-25,25v0C19,158.8,30.2,170,44,170z"/>
+	<text transform="matrix(1 0 0 1 45.9521 141)"><tspan x="0" y="0" class="st6 st2 st7">Company</tspan><tspan x="5.7" y="10.8" class="st6 st2 st7">Website</tspan></text>
+	<text transform="matrix(1 0 0 1 88.5107 151.0059)" class="st6 st8 st9"></text>
+	<path class="st4" d="M39,110h60V70H39c-11,0-20,9-20,20v0C19,101,28,110,39,110z"/>
+	<text transform="matrix(1 0 0 1 47.9868 92)" class="st6 st2 st7">Referrals</text>
+	<text transform="matrix(1 0 0 1 88.5107 98.0059)" class="st6 st8 st9"></text>
+</g>
+<g id="rejections">
+	<g>
+		<g>
+			<g class="st10">
+				<rect x="120" y="70" class="st17" width="170" height="20"/>
+			</g>
+			<g class="st10">
+				<path class="st17" d="M120,150v-30c22.2,0,59-8.5,91.5-16c32.4-7.5,60.4-14,78.5-14v30c-14.7,0-43.7,6.7-71.8,13.2
+					C182.5,141.5,145.6,150,120,150z"/>
+			</g>
+			<g class="st10">
+				<path class="st17" d="M300,270v-60c5.9,0,9.3-0.8,10.5-1.6c1.3-0.8,3.3-3.5,5.5-6.4c9-12,24-32,64-32v60
+					c-5.9,0-9.3,0.8-10.5,1.6c-1.3,0.8-3.3,3.5-5.5,6.4C355,250,340,270,300,270z"/>
+			</g>
+			<g class="st10">
+				<path class="st17" d="M390,310v-40c15,0,17.6-3.5,24-12c8.4-11.2,21-28,56-28v40c-15,0-17.6,3.5-24,12
+					C437.6,293.2,425,310,390,310z"/>
+			</g>
+			<g class="st10">
+				<rect x="300" y="70" class="st17" width="80" height="100"/>
+			</g>
+			<g class="st10">
+				<path class="st17" d="M120,200v-20c33.7,0,60.7-15.5,86.8-30.4C232.2,135,258.5,120,290,120v20c-26.2,0-49,13.1-73.3,26.9
+					C188.4,183.2,159,200,120,200z"/>
+			</g>
+			<g class="st10">
+				<path class="st17" d="M120,310v-40c26.3,0,51.5-33.6,75.8-66c27.2-36.4,55.4-74,94.2-74v40c-18.8,0-40.9,29.5-62.2,57.9
+					C199,266.4,166.4,310,120,310z"/>
+			</g>
+			<rect x="285" y="70" class="st18" width="20" height="100"/>
+			<g class="st10">
+				<path class="st17" d="M485,340v-10c27.7,0,44.7-14.2,62.8-29.2C566.1,285.7,585,270,615,270v10c-26.4,0-43.1,13.9-60.8,28.5
+					C535.5,324,516.3,340,485,340z"/>
+			</g>
+			<g class="st10">
+				<rect x="390" y="70" class="st17" width="80" height="160"/>
+			</g>
+			<g class="st10">
+				<rect x="480" y="70" class="st17" width="140" height="200"/>
+			</g>
+			<rect x="465" y="70" class="st18" width="20" height="200"/>
+			<rect x="615" y="70" class="st18" width="20" height="210"/>
+			<rect x="375" y="70" class="st18" width="20" height="160"/>
+		</g>
+	</g>
+	<path class="st18" d="M635,280L635,280l0-210h0c58,0,105,47,105,105v0C740,233,693,280,635,280z"/>
+	<text transform="matrix(1 0 0 1 661.0654 180.3335)" class="st6 st12 st13">420</text>
+	<text transform="matrix(1 0 0 1 745.3975 176)" class="st18 st12 st3">Rejected</text>
+</g>
+
+<g id="no-show">
+	<g>
+		<g>
+			<g class="st10">
+				<rect x="395" y="310" width="220" height="20"/>
+			</g>
+			<g class="st10">
+				<path d="M485,350v-10c28.2,0,45.4-9.5,63.6-19.6c18.1-10,36.9-20.4,66.4-20.4v10c-26.9,0-43.8,9.3-61.6,19.2
+					C534.9,339.4,515.7,350,485,350z"/>
+			</g>
+			<rect x="615" y="300" class="st11" width="20" height="30"/>
+		</g>
+	</g>
+	<path class="st11" d="M666,330h-31v-30h31c8.3,0,15,6.7,15,15l0,0C681,323.3,674.3,330,666,330z"/>
+	<text transform="matrix(1 0 0 1 646.377 323.3335)" class="st6 st12 st13">60</text>
+</g>
+<g id="joined">
+	<g>
+		<g class="st14">
+			<path class="st15" d="M290,290c-41.5,0-69.7-49.6-97-97.6c-23.1-40.5-46.9-82.4-73-82.4V90c37.7,0,63.3,45,90.4,92.6
+				c24.5,43,49.8,87.4,79.6,87.4V290z"/>
+		</g>
+		<g class="st14">
+			<path class="st15" d="M290,310c-40.7,0-69-38.7-96.4-76c-24.1-32.9-46.8-64-73.6-64v-20c37,0,63.8,36.7,89.8,72.1
+				c24.4,33.4,49.7,67.9,80.2,67.9V310z"/>
+		</g>
+		<g class="st14">
+			<path class="st15" d="M120,370v-60c19.7,0,39.6-19.5,60.7-40.1C209.5,241.8,242.1,210,290,210v60c-23.4,0-44.8,20.8-67.3,42.9
+				C195.2,339.6,164.1,370,120,370z"/>
+		</g>
+		<g class="st14">
+			<path class="st15" d="M290,370c-26.7,0-56.5-23.3-102.9-61.2c-15-12.2-30.4-24.9-43.8-34.4c-17.9-12.8-24.1-14.3-24.8-14.5
+				c0,0,0.5,0.1,1.5,0.1v-60c27.4,0,57.8,23.7,105.1,62.4c14.6,11.9,29.7,24.3,42.6,33.6c17.3,12.4,23.4,14,24,14.2
+				c0,0-0.6-0.1-1.7-0.1V370z"/>
+		</g>
+		<g class="st14">
+			<rect x="305" y="270" class="st15" width="80" height="100"/>
+		</g>
+		<g class="st14">
+			<rect x="395" y="330" class="st15" width="80" height="40"/>
+		</g>
+		<g class="st14">
+			<rect x="485" y="350" class="st15" width="130" height="20"/>
+		</g>
+		<rect x="285" y="210" class="st16" width="20" height="160"/>
+		<rect x="375" y="270" class="st16" width="20" height="100"/>
+		<rect x="465" y="330" class="st16" width="20" height="40"/>
+		<rect x="615" y="350" class="st16" width="20" height="20"/>
+	</g>
+	<rect x="635" y="350" class="st16" width="70" height="20"/>
+	<polygon class="st16" points="705,360.4 705,339 714.3,349.7 723.5,360.4 714.3,371.1 705,381.8 	"/>
+	<text transform="matrix(1 0 0 1 730.377 360.3335)" class="st16 st12 st13">40</text>
+	<text transform="matrix(1 0 0 1 729.668 370)" class="st16 st12 st3">Onboarded</text>
+</g>
+<text transform="matrix(1 0 0 1 684.167 319)" class="st11 st12 st3">No-show</text>
+
+</svg>
