@@ -1,0 +1,269 @@
+
+html,
+body {
+    height: #eee;
+}
+
+
+a {
+    transition: all .25s ease-in-out;
+}
+
+ body {
+    background: #eee;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    border-bottom: solid 1px #ddd;
+    background: #fff;
+    z-index: 96;
+}
+
+.banner-wrap {
+    margin: 0 40px;
+    position: relative;
+    height: 80px;
+}
+
+.banner-wrap .device {
+    position: absolute;
+    bottom: -10px;
+    right: -90px;
+    z-index: 97;
+}
+
+
+.banner .logo {
+    height: 80px;
+}
+
+.logo img {
+    display: inline-block;
+    height: 100%;
+    width: auto;
+}
+
+.hospital-logo {
+    border: 1px #ddd;
+    border-style: none solid;
+    box-sizing: border-box;
+    padding: 15px 0;
+    text-align: center;
+    height: 80px;
+}
+
+
+.hospital-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.left-nav {
+    width: 11.25rem;
+    background: #f8f8f8;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    bottom: 0;
+}
+
+.page {
+    margin: 120px 40px 0;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-left: calc(11.25rem + 40px);
+}
+
+.user-nav .nav li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    color: #99989a;
+}
+
+a.user-dropdown {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.user-dropdown .icon-user {
+    font-size: 40px;
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.banner .nav {
+    text-align: right;
+    padding-right: 60px;
+    position: relative;
+    z-index: 99;
+}
+
+.content-block {
+    background: #fff;
+    border: solid 1px #ddd;
+}
+
+.content-header,
+.content-wrap,
+.content-footer {
+    padding: 30px;
+    background: #fff;
+}
+
+nav.content-tab {
+    background: #fafafa;
+}
+
+nav.content-tab {
+    background: #fafafa;
+    min-height: 30px;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    position: relative;
+}
+
+.content-header .block {
+    height: 40px;
+}
+
+.hospital-logo h1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #2d6fb7;
+}
+
+a.logout {
+    margin: 0 15px;
+}
+
+span.icon-logout {
+    font-size: 30px;
+    line-height: 50px;
+    vertical-align: middle;
+    color: #ccc;
+}
+
+h1 > span:nth-child(even) {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+h1 > span:nth-child(odd) {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.content-header h2, .content-header h3 {
+    display: inline-block;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.content-header h2 {
+    text-transform: uppercase;
+    color: #2d6fb7;
+}
+
+.content-header h2 .thin {
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.content-header span.icon.icon-recapture {
+    font-size: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.content-header h3.subheading {
+    font-weight: 300;
+    padding: 0 25px;
+    letter-spacing: 3px;
+    color: #999;
+}
+
+.content-header h3.subheading .small-icon {
+    font-size: 14px;
+    color: #eb1e25;
+    margin-right: 20px;
+}
+
+.tab-wrap li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tab-wrap li a {
+    display: inline-block;
+    padding: 30px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    border-right: solid 1px #ddd;
+    position: relative;
+}
+
+.tab-wrap li a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    opacity: 0;
+    transition:  all 0.25s ease-in-out;
+}
+
+.tab-wrap li a:hover {
+    background: #fff;
+}
+
+.tab-wrap li a:hover:after {
+    opacity: 1;
+    background: #eee;
+    height: 2px;
+}
+
+.tab-wrap li .tab-icon {
+    display: block;
+    margin: 0 auto 15px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.tab-wrap li.active a {
+    color: #eb1e25;
+    background: #fff;
+}
+
+.tab-wrap li.active a:after {
+    height: 3px;
+    background: #eb1e25;
+    opacity: 1;
+}
