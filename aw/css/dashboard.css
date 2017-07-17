@@ -48,7 +48,17 @@ a:hover {
 	left: 0;
 	top: 60px;
 	bottom: 0;
-	background: #444d58;
+	background: #fff;
+}
+
+.left-nav .setting-panel {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 50px;
+	background: #f5f8fb;
+	border-top: solid 1px #eff3f8;
 }
 
 .right-panel {
@@ -92,6 +102,7 @@ svg#mysourceLogo .cls-2{fill:#d83976;}
     height: 60px;
     overflow: hidden;
     width: 200px;
+    border-right: solid 1px #eee;
 }
 
 .user-nav {
@@ -110,6 +121,7 @@ svg#mysourceLogo .cls-2{fill:#d83976;}
 	box-sizing: border-box;
 	padding: 0;
 	position: relative;
+	text-align: right;
 }
 
 .branding svg {
@@ -134,16 +146,18 @@ nav ul {
 	display: inline;
 	position: relative;
 	padding: 0;
+	text-align: right
 }
 
 .primary-nav > ul > li > a {
-	float: left;
+	display: inline-block;
 	height: 60px;
 	line-height: 60px;
 	font-size: 14px;
 	margin: 0 15px;
-	color: #909cab;
+	color: #697584;
 	position: relative;
+	text-align: center;
 }
 
 .primary-nav > ul > li > a:hover {
@@ -179,7 +193,7 @@ nav ul {
 	line-height: 55px;
 	text-align: center;
 	display: block;
-	color: #fff;
+	color: #697584;
 	position: absolute;
 	transition: all 0.2s ease-in-out;
 }
@@ -205,8 +219,8 @@ nav.left-nav .side-nav {
 	box-sizing: border-box;
 	line-height: 60px;
 	padding:  0 20px;
-	color: #fff;
-	font-weight: 300;
+	color: #697584;
+	font-weight: 400;
 	letter-spacing: 0.4px;
 }
 
@@ -221,24 +235,28 @@ nav.left-nav .side-nav {
 
 .side-nav > li > a:hover {
 	background: #3c91c6;
+	color: #fff;
 }
 
 .side-nav > li > h3 {
-	height: 60px;
+	height: 50px;
 	font-size: 12px;
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.4px;
 	margin:  0;
 	display: block;
-	line-height: 60px;
+	line-height: 50px;
 	padding-left: 20px;
-	color: #e3e8ec;
+	color: #697584;
+	box-sizing: border-box;
 }
 
 .side-nav li.nav-header {
-	background: #4f5a66;
+	background: #f5f8fb;
 	height: 50px !important;
+	border-bottom: solid 1px #eff3f8;
+	border-right: solid 1px #eff3f8;
 }
 
 .sub-nav .left-nav-toggle {
@@ -340,6 +358,7 @@ nav.left-nav .side-nav {
 	line-height: 60px;
 	float: left;
 	text-align: center;
+	color: #697584;
 }
 
 .user-nav > div > a.trigger i.icon {
@@ -406,6 +425,8 @@ nav.left-nav .side-nav {
 	height: calc(100vh - 112px);
 	overflow-x: hidden;
 	overflow-y: auto;
+	box-sizing: border-box;
+	padding-bottom: 60px;
 }
 
 
@@ -433,6 +454,7 @@ nav ul.right-panel-nav {
     height: 50px;
     border-bottom: solid 1px #eee;
     padding:  0 10px;
+    position: relative;
 }
 
 .box-header h3 {
@@ -443,9 +465,9 @@ nav ul.right-panel-nav {
 
 .box-header .inline-tab-nav {
 	width: 65%;
-	float: right;
 	height: 50px;
 	overflow: hidden;
+	display: inline-block;
 }
 
 .box-header h2,
@@ -457,7 +479,7 @@ nav ul.right-panel-nav {
 	letter-spacing: 1px;
 	height: 50px;
 	line-height: 50px;
-	color: #909cab;
+	color: #697584;
 }
 
 .inline-tab-nav li {
@@ -470,7 +492,7 @@ nav ul.right-panel-nav {
 	display: inline-block;
 	height: 34px;
 	line-height: 34px;
-	color: #909cab;
+	color: #697584;
 	padding:  0 5px;
 	opacity: 0.7;
 	position: relative;
@@ -492,7 +514,9 @@ nav ul.right-panel-nav {
 }
 
 .box.search-panel {
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.10);
+	position: relative;
+	overflow: hidden;
 }
 
 
@@ -512,26 +536,33 @@ nav ul.right-panel-nav {
 	width: 100%;
 	height: 40px;
 	border:  none;
-	padding:  0 10px;
+	padding:  0 10px 0 40px;
 	box-sizing: border-box;
 }
 
-.search-panel .fieldset button {
+.search-panel .fieldset .search-icon {
 	position: absolute;
-	right: 10px;
+	left: 10px;
 	top: 0;
 	bottom: 0;
 	width: 50px;
 	background: transparent;
 	border:  none;
 	display: block;
+	height: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	padding-top: 5px;
 }
 
-.search-panel .fieldset button .icon-search {
+.search-panel .fieldset .search-icon .icon-search {
 	font-size: 28px;
+	color: #ccc;
+}
+
+.search-panel.in-focus .fieldset .search-icon .icon-search {
 	color: #d83976;
 }
-
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   opacity: 0.5;
@@ -562,7 +593,7 @@ nav ul.right-panel-nav {
 }
 
 #liveWeather ul li {
-	color: #909cab;
+	color: #697584;
 }
 
 #liveWeather i {
@@ -622,7 +653,12 @@ nav ul.right-panel-nav {
 	font-size: 20px;
 	height: 50px;
 	text-align: center;
-	color: #909cab;
+	color: #697584;
+	border-right: solid 1px #eee;
+}
+
+.right-panel-nav li:last-child a {
+	border-right: none;
 }
 
 .right-panel-nav li a i {
@@ -632,13 +668,12 @@ nav ul.right-panel-nav {
 
 .right-panel-nav li.active a {
 	color: #d83976;
-	border-right: solid 1px #eee;
 }
 
 .right-column .tab h4 {
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #909cab;
+	color: #697584;
 	height: 40px;
 	line-height: 40px;
 	padding: 0 10px;
@@ -684,7 +719,7 @@ nav ul.right-panel-nav {
 	margin:  0;
 	padding:  0;
 	font-size: 14px;
-	color: #909cab;
+	color: #697584;
 }
 
 .item-list li h5 i {
@@ -692,7 +727,7 @@ nav ul.right-panel-nav {
 	height: 24px;
 	line-height: 24px;
 	vertical-align: top;
-	color: #909cab;
+	color: #697584;
 }
 
 .item-list li p {
@@ -727,7 +762,7 @@ nav ul.right-panel-nav {
 	font-size: 14px;
 	line-height: 40px;
 	text-align: right;
-	color: #909cab;
+	color: #697584;
 }
 
 .overview-chart {
@@ -753,7 +788,7 @@ nav ul.right-panel-nav {
 .overview-chart .chart-legend li {
 	font-size: 12px;
 	line-height: 25px;
-	color: #909cab;
+	color: #697584;
 }
 
 .leave-actions {
@@ -765,6 +800,423 @@ nav ul.right-panel-nav {
 	font-size: 14px;
 }
 
+.chat-bot-trigger {
+	float: right;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	top: 13px;
+}
+.chat-bot-trigger svg {
+	width: 50px;
+	height: auto;
+}
+
+svg#bot-icon path,
+svg#bot-icon rect {
+	fill: #d83976;
+}
+
+.search-panel {
+	transition: all 0.5s ease-in-out;
+}
+
+.search-panel.in-focus {
+	position: relative;
+	z-index: 999999;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+body:after {
+	transition: opacity 0.2s ease-in-out;
+	position: fixed;
+	content: '';
+	display: block;
+	left: 50%;
+	right: 50%;
+	top: 50%;
+	height: 2px;
+	border-radius: 100%;
+	z-index: -9999;
+	background: #fff;
+	opacity: 0;
+}
+
+body.search-in-focus:after {
+	opacity: 0.95;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 0;
+	z-index: 9999;
+}
+
+.result-wrap {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	max-height: 0;
+	background: #fff;
+	transition: all 0.3s ease-in-out;
+	opacity: 0;
+}
+body.search-in-focus .box.search-panel {
+	overflow: visible;
+}
+body.search-in-focus .result-wrap {
+	max-height: 200vh;
+	opacity: 1;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+ul.chat-list {
+    padding: 20px;
+    background: #fbfbfb;
+    border: 1px #ddd;
+    border-style: solid none;
+}
+
+ul.chat-list li {
+	display: block;
+}
+
+
+ul.result-list li {
+	padding: 20px;
+}
+
+ul.result-list li:last-child {
+    text-align: center;
+    background: #3c91c6;
+    border: none;
+    color: #fff;
+}
+
+.result-list li:last-child .result-number {
+	font-size: 24px;
+}
+
+.result-list li:last-child .result-number i {
+	display: block;
+	margin:  0 auto;
+	font-size: 14px;
+}
+ul.result-list li:last-child a {
+	color: #fff;
+}
+
+.chat-list li.bot {
+	text-align: left:0;
+}
+
+.chat-list li.you {
+	text-align: right;
+}
+
+.chat-list .bubble-wrap .bot-icon,
+.chat-list .bubble-wrap .you-icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    vertical-align: top;
+    background: #4dbd74;
+    border-radius: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.chat-list .bubble-wrap .you-icon {
+	color: #fff;
+	box-sizing: border-box;
+	padding-top: 13px;
+	background: #d83976;
+}
+
+.chat-list .bubble-wrap .bubble-txt {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.chat-list .bubble-wrap .bubble-txt p {
+    margin-top: 0;
+    background: #fff;
+    display: inline-block;
+    padding: 10px;
+    border: solid 1px #ddd;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+    color: #888;
+}
+
+.chat-list li.you .bubble-wrap .bubble-txt p {
+	border-radius: 20px 0 20px 20px;
+}
+
+.action-btns a.option {
+    display: inline-block;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    margin: 0 20px;
+}
+
+a.negative.option {
+    color: #888;
+}
+
+ul.result-list {
+	box-sizing: border-box;
+	padding:  20px;
+	width: 100%;
+}
+
+ul.result-list li a {
+	color: #697584;
+}
+
+.result-list li a > span {
+	display: block;
+}
+
+.result-list li {
+    border: solid 1px #ddd;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.result-list li h4 {
+	margin: 0 0 10px 0;
+}
+
+.result-list li p {
+	margin: 0;
+	font-size: 14px;
+}
+
+ul.result-list li:last-child {
+    text-align: center;
+}
+
+.inline-tab-nav li em {
+	opacity: 0.5;
+}
+
+.bot-panel {
+	position: fixed;
+	top: 60px;
+	bottom: 60px;
+	width: 700px;
+	left: 50%;
+	margin: 0 0 0 -350px;
+	z-index: -99999;
+	padding: 10px;
+	background: #fff;
+	box-sizing: border-box;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	display: none;
+	pointer-events: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.bot-panel.opened {
+	display: block; opacity: 1; z-index: 999999;
+	pointer-events: initial;
+}
+
+body.bot-panel-open:after {
+	opacity: 0.95;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 0;
+	z-index: 9999;
+}
+
+.bot-wrap {
+	position: relative;
+	height: 100%;
+}
+
+.bot-panel .comment-form {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	height: 70px;
+	border-top: solid 1px #eee;
+}
+
+.bot-panel .bot-wrap .chat-list {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 70px;
+	z-index: 99;
+}
+
+
+.search-panel .fieldset span.icon-bot-inline {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #ccc;
+    border-radius: 20px;
+	opacity: 0.5;
+}
+
+.search-panel.typed .fieldset span.icon-bot-inline {
+	opacity: 1;
+	background: #4dbd74;
+}
+
+.chat-list .bubble-wrap .bubble-txt p small {
+	display: block;
+	opacity: 0.5;
+}
+
+.bot-panel .closethis {
+	position: absolute;
+	color: #555;
+	font-size: 25px;
+	z-index: 999;
+	top: -30px;
+	right: -30px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border:  solid 2px #555;
+	border-radius: 40px;
+	text-align: center;
+	line-height: 42px;
+}
+
+.result-wrap ul.chat-list li {
+	max-height: 0px;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.2s;
+	transition-delay: 2s;
+}
+
+.result-wrap ul.chat-list {
+	background: url('../img/loader.svg') center center no-repeat;
+	background-size: 50px auto;
+	min-height: 100px;
+}
+
+.search-panel.in-focus .result-wrap ul.chat-list li {
+	max-height: 100vh;
+	opacity: 1;
+	transition-delay: 0;
+	background: #fff;
+}
+
+
+.result-wrap .loader-inline {
+	display: block;
+	margin: 10px auto;
+	width: 50px;
+	height: auto;
+}
+
+.result-wrap .loader-inline img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.2s;
+	transition-delay: 2s;
+}
+
+.search-panel.in-focus .result-wrap .loader-inline img {
+	opacity: 0;
+	height: 0px;
+}
+
+#botUI .comment-form .fieldset {
+	position: relative;
+}
+
+#botUI .comment-form .fieldset .txt-field {
+	width: 100%;
+	height: 42px;
+	border: solid 1px #eee;
+	box-sizing: border-box;
+}
+
+.comment-form .fieldset .txt-field input[type="text"] {
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: transparent;
+    border: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.comment-form .fieldset > button {
+	position: absolute;
+	background: transparent;
+	border:  none;
+	height: 40px;
+	width: 40px;
+	top: 0;
+	right: 0;
+	color: #d83976;
+}
+
+.comment-form small {
+    display: block;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.setting-panel {
+	text-align: center;
+}
+.setting-panel a {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	color: #697584;
+}
+
+.setting-panel i {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	text-align: center;
+}
+
+.overview-chart .chart svg {
+	max-height: 120px;
+}
+
+.leave-actions li 
 @media only screen and (min-width: 1000px) and (max-width: 1250px) {
 	.primary-nav > ul > li > a {
 		margin: 0 5px;

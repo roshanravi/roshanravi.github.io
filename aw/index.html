@@ -116,6 +116,20 @@
                         <a href="#nogo"> <i class="icon icon-laptop"></i>Request Support</a>
                     </li>
                 </ul>
+
+                <div class="setting-panel">
+                    <a href="#" class="setting-link">
+                        <i class="icon-user"></i>
+                    </a>
+
+                    <a href="#" class="setting-link">
+                        <i class="icon-switch"></i>
+                    </a>
+
+                    <a href="#" class="setting-link">
+                        <i class="icon-help_outline"></i>
+                    </a>
+                </div>
             </nav>
             <main class="page">
                 <nav class="sub-nav clearfix">
@@ -169,8 +183,9 @@
                             <div class="card-wrap">
                                 <section class="search-panel box">
                                     <div class="box-header">
-                                        <h3>Search</h3>
+                                        
                                         <ul class="inline-tab-nav">
+                                            <li><em>Find:</em></li>
                                             <li class="active">
                                                 <a href="#">
                                                     Everything
@@ -199,11 +214,81 @@
                                     <div class="box-content">
                                     <div class="fieldset">
 
-                                        <input type="text" class="search" placeholder="Ask anything (Search for Documents, Content, People etc.)">
-                                        <button><span class="icon-search"></span></button>
+                                        <input type="text" class="search" placeholder="What do you want to do today?">
+                                        <div class="search-icon"><span class="icon-search"></span></div>
+                                        <span class="icon-bot-inline">
+                                            <img src="img/bot.svg" alt="bot">
+                                        </span>
                                     </div>
+                                    </div>
+                                    
+                                    <div class="result-wrap">
+                                           
+                                        <ul class="chat-list">
+                                            <li class="bot">
+                                                <div class="bubble-wrap">
+                                                    <span class="bot-icon">
+                                                        <img src="img/bot.svg" alt="bot">
+                                                    </span>
+                                                    <div class="bubble-txt">
+                                                        <p>Hi Karen, would you like me to send a support request for a new Desk Phone?</p>
+                                                        <div class="action-btns">
+                                                        <a href="#yes" id="chat-trigger" class="positive option open-chat-bot">Yes</a>
+
+                                                        <a href="#no" id="close-trigger" class="negative option close-chat-list">No</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="result-list row">
+                                            <li class="col-3">
+                                                
+                                                <a href="#">
+                                                    <span><i class="icon-text-document"></i> Policies</span>
+                                                    <h4>Workplace Policy</h4>
+                                                    <p>lorem ipsum dolar sit amet <em>changing workstation</em></p>
+                                                </a>
+                                            </li>
+
+                                            <li class="col-3">
+                                                
+                                                <a href="#">
+                                                    <span><i class="icon-users"></i> Social</span>
+                                                    <h4>Can I change my desk..</h4>
+                                                    <p>lorem ipsum dolar sit amet <em>changing my desk..</em></p>
+                                                </a>
+                                            </li>
+
+                                            <li class="col-3">
+                                                
+                                                <a href="#">
+                                                    <span><i class="icon-users"></i> Social</span>
+                                                    <h4>Can I change my desk..</h4>
+                                                    <p>lorem ipsum dolar sit amet <em>changing my desk..</em></p>
+                                                </a>
+                                            </li>
+
+                                            <li class="col-3">
+                                                
+                                                <a href="#">
+                                                    <span class="result-number">
+                                                        <i class="icon-search"></i>
+                                                        08
+                                                    </span>
+                                                    <span class="link">
+                                                        more results <i class="icon-chevron-right"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
                                     </div>
                                 </section>
+
+                                
                             </div>
                             <section class="row card-wrap">
                                     <div class="card col-4">
@@ -394,6 +479,7 @@
 
 
                             </div>
+                            
                         </aside>
 
                     </div>
@@ -402,15 +488,108 @@
 
             </main>
             
+
+
+<div class="bot-panel" id="botUI">
+    <div class="bot-wrap">
+        <a href="#none" class="closethis"><i class="icon-close"></i></a>
+    <ul class="chat-list">
+        <li class="bot">
+            <div class="bubble-wrap">
+                <span class="bot-icon">
+                    <img src="img/bot.svg" alt="bot">
+                </span>
+                <div class="bubble-txt">
+                    <p>
+                        Hi Karen, would you like me to send a support request for a new Desk Phone?
+                    </p>
+                    <div class="action-btns">
+                        <a href="#yes" class="positive option">Yes</a>
+
+                        <a href="#no" class="negative option">No</a>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+
+
+        <li class="you">
+            <div class="bubble-wrap">
+
+                <div class="bubble-txt">
+                    <p>
+                        Yes
+                    </p>
+                </div>
+
+                <span class="you-icon">
+                    You
+                </span>
+            </div>
+        </li>
+
+        <li class="bot">
+
+            <div class="bubble-wrap">
+                <span class="bot-icon">
+                    <img src="img/bot.svg" alt="bot">
+                </span>
+                <div class="bubble-txt">
+                    <p>
+                        <small>Jut Now</small>
+                        I have logged your request in to IT Helpdesk.
+                    </p>
+                </div>
+            </div>
+        </li>
+
+
+<li class="bot">
+
+            <div class="bubble-wrap">
+                <span class="bot-icon">
+                    <img src="img/bot.svg" alt="bot">
+                </span>
+                <div class="bubble-txt">
+                    <p>
+                        <small>Jut Now</small>
+                        Your Reference number is <a href="#">#ABC39239</a>. The ticket has been assigned to <a href="#">Damien Marley</a>. You will get a resolution for your ticket in 15 minutes.
+                        
+                    </p>
+                    <div class="action-btns">
+                        <a href="#yes" class="positive option">Go to Support Ticket</a>
+
+                    </div>
+                </div>
+            </div>
+        </li>
+
+
+
+
+    </ul>
+
+    <div class="comment-form">
+        <div class="fieldset">
+        <div class="txt-field">
+            <input type="text" placeholder="Ask me anything" /> 
         </div>
+        <button class="chat-btn">
+            <i class="icon-arrow_upward"></i>
+        </button>
+        </div>
+        <small><i class="icon-help_outline"></i> For help on how to use, just type help</small>
+    </div>
+    </div>
+</div>
 
-        <footer class="page-footer">
-            bottom
-        </footer>
 
+        </div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

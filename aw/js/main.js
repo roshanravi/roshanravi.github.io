@@ -9,7 +9,8 @@ $(function() {
 
    	setTimeout(function(){
        		$(".alert-label.blue").addClass("appear");
-   	}, 2500);	
+   	}, 2500);
+
 
 
    	$('.user-nav > div .trigger').on('focus, click', function(e) {
@@ -17,15 +18,34 @@ $(function() {
    		$(this).next('.sub-wrap').toggleClass('open').parent('div').siblings('div').find('.sub-wrap.open').removeClass('open');
    	});
 
+   	$('body:not(.search-in-focus) .search-panel input.search').change(function() {
+		$(this).parents('.search-panel').addClass('in-focus');
+		$('body').addClass('search-in-focus');
+	});
+
+	$('.search-panel input.search').focus(function(e) {
+		$(this).parents('.search-panel').addClass('typed');
+	});
+
    	$(window).click(function() {
 		if ($('.sub-wrap').hasClass('open')) {
 			$('.sub-wrap.open').removeClass('open');
+		}
+
+		if ($('body').hasClass('search-in-focus')) {
+			$('.search-panel').removeClass('in-focus');
+			$('body').removeClass('search-in-focus');
 		}
 	});
 
 	$('.user-nav > div').click(function(event){
     	event.stopPropagation();
 	});
+
+	$('body:not(.search-in-focus) .search-panel').click(function(event){
+    	event.stopPropagation();
+	});
+
 
 	$.get("http://ipinfo.io", function(response) {
 		console.log(response.city, response.country);
@@ -52,8 +72,21 @@ $(function() {
 
 	}, "jsonp");
 
-	
 
+	$('#chat-trigger').click(function(e) {
+		e.preventDefault();
 
+		$('#botUI').addClass('opened');
+		$('body').addClass('bot-panel-open').removeClass('search-in-focus');
+		$('.search-panel').removeClass('in-focus');
+
+	});
+
+	$('#botUI .closethis').click(function(e) {
+		e.preventDefault();
+		$('#botUI').removeClass('opened');
+		$('body').removeClass('bot-panel-open');
+	});
 
 });
+
