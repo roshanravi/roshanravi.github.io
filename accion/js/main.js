@@ -135,9 +135,12 @@ var Spanizer = (function() {
 });
 
 $(window).on('load', function(){
-    $('.pageloader').fadeOut('300', function() {
-      
-    });;
+  setTimeout(function () {
+         $('.pageloader').fadeOut('300', function() {
+        });
+    }, 300);
+
+   
 });
 
 
