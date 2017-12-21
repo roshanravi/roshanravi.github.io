@@ -1,0 +1,8 @@
+@import url('base.css');
+@import url('icon/style.css');
+@import url('../plugins/jquery.bxslider.css');
+@import url('style.css');
+@import url('mediaqueries.css');
+body {
+  min-height: 3000px;
+}

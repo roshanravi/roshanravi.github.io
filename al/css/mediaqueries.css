@@ -1,0 +1,20 @@
+@media screen and (min-height: 800px) {
+
+  .hero-banner,
+  .slide {
+    height: 600px;
+  }
+
+}
+
+
+@media screen and (min-height: 650px) and (max-height: 799px) {
+
+  .hero-banner,
+  .slide {
+    height: 500px;
+  }
+  .hero-banner h2 {
+    font-size: 62px;
+  }
+}
