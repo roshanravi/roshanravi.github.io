@@ -1207,12 +1207,19 @@ a.button.more-button {
 .cb-wrap .icon {
   display: block;
   margin: 0 auto;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
+  padding: 5px;
+  border-radius: 110px;
+  background: #fff;
+}
+
+.coe-block h3 {
+    margin-top: 10px;
 }
 
 .cb-wrap .icon svg {
-  height: 80px;
+  height: 100px;
   width: auto;
 }
 
