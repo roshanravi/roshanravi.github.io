@@ -1305,8 +1305,8 @@ li.navicon a {
 }
 
 .feature-block .vertical-aligner {
-  min-height: 50vh;
   height: 500px;
+  min-height: 80vh;
 }
 
 .feature-block {

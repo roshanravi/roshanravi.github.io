@@ -136,7 +136,8 @@ var Spanizer = (function() {
 
 $(window).on('load', function(){
   $('.pageloader').fadeOut('300', function() {
-        });
+});
+
 
    
 });
