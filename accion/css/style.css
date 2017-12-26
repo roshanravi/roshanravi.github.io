@@ -79,6 +79,7 @@ ul li {
 
 .top-nav .row .branding {
 	padding: 19px 0;
+  width: 180px;
 }
 
 .top-nav .row .branding svg {
@@ -98,14 +99,41 @@ ul li {
 .main-nav > li > a {
 	display: inline-block;
 	height: 70px;
-	line-height: 70px;
-	text-transform: uppercase;
-	font-weight: 800;
 	letter-spacing: 0.8px;
 	text-decoration: none;
 	color: #67717c;
+  padding-top: 15px;
 }
 
+.main-nav > li > a span.small {
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.nav-bar.col {
+  width: calc(100% - 200px);
+}
+
+.main-nav > li > a i.icon-nav {
+  font-size: 24px;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.main-nav > li > a span.label {
+  font-weight: 800;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+}
+
+
+.main-nav li a i.icon {
+    
+}
 
 .main-nav > li.active > a {
 	color: #e84b54;
@@ -954,7 +982,7 @@ figure.main-svg > svg #elements > g {
   z-index: 1;
   width: 10px;
   height: 10px;
-  margin-top: -8px;
+  margin-top: -6px;
   border:  solid 3px #67717c;
   border-radius: 10px;
   content: '';
@@ -977,7 +1005,7 @@ figure.main-svg > svg #elements > g {
 
 @keyframes drive {
   0%   { opacity:0; left: 0;}
-  50%  { opacity:1; left: 100%;}
+  30%  { opacity:1; left: 100%;}
   100% { opacity:0; left: 120%}
 }
 
@@ -1260,6 +1288,10 @@ li.navicon a {
   padding: 80px 0;
 }
 
+.content-block.services-section {
+  padding-top: 30px;
+}
+
 .case-studies.inverse {
   background: #2c3238;
   color: #f4f7f9;
@@ -1359,17 +1391,17 @@ li.navicon a {
 }
 
 .parallax-feature .feature-img {
-  width: 440px;
-  height: 440px;
-  border-radius: 440px;
+  width: 540px;
+  height: 540px;
+  border-radius: 540px;
   overflow: hidden;
   display: block;
   position: absolute;
   z-index: 1;
   left: 50%;
   top: 50%;
-  margin-left: -220px;
-  margin-top: -220px;
+  margin-left: -360px;
+  margin-top: -270px;
   transition: all 1s ease-in-out;
 }
 
@@ -1407,6 +1439,13 @@ li.navicon a {
   left: 40px;
 }
 
+
+.feature-block .row .col-6:last-child .parallax-feature .feature-img {
+  left: auto;
+  right: 50%;
+  margin-left: auto;
+  margin-right: -360px;
+}
 
 .feature-block:hover .parallax-feature .feature-img {
     -webkit-box-shadow: 0 15px 40px 0px rgba(0, 0, 0, 0.15);
@@ -1496,4 +1535,98 @@ li.navicon a {
 .page-section,
 .content-block {
   position: relative;
+}
+
+.chat-bot {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 60px;
+  height: 60px;
+  z-index: 9998;
+}
+
+.chat-bot-wrap {
+  position: relative;
+}
+
+.bot-notification,
+.chat-bot-ui {
+  display: none;
+}
+
+.bot-trigger {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: #e84b54;
+  display: block;
+}
+
+.related-case-studies {
+  margin-top: 30px;
+}
+
+.related-case-studies li {
+  text-align: center;
+  padding: 20px;
+  border: solid 1px #dce1e5;
+  background: #fff;
+  border-right: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.related-case-studies li:last-child {
+  border-right: solid 1px #dce1e5;
+}
+
+.related-case-studies li h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+}
+
+.related-case-studies li h3 i.icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #e84b54;
+  border-radius: 30px;
+  margin: 10px auto 0 auto;
+}
+
+.related-case-studies li .logo-img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.related-case-studies li:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2)
+}
+
+.related-case-studies li .logo-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.related-case-studies li:hover .logo-img img {
+  filter: grayscale(0);
+}
+
+a.more-btn {
+  color: #e84b54;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
 }
