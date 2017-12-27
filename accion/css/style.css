@@ -1584,6 +1584,7 @@ li.navicon a {
 
 .related-case-studies {
   margin-top: 30px;
+  position: relative;
 }
 
 .related-case-studies li {
@@ -1593,6 +1594,39 @@ li.navicon a {
   background: #fff;
   border-right: none;
   transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.related-case-studies li:after,
+.related-case-studies li:before,
+.related-case-studies:before,
+.related-case-studies:after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background: #b1bac1;
+  position: absolute;
+}
+
+.related-case-studies li:after {
+  right: -2px;
+  top: -2px;
+}
+
+.related-case-studies:before {
+  left: -2px;
+  top: -2px;
+}
+
+.related-case-studies li:before {
+  left: -2px;
+  bottom: -2px;
+}
+
+.related-case-studies:after {
+  right: -2px;
+  bottom: -2px;
 }
 
 .related-case-studies li:last-child {
