@@ -1136,6 +1136,16 @@ header.top-nav {
   border-top: none;
 }
 
+.feature-block .parallax-img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: -400px;
+    height: auto;
+}
+
+
 .coe-wrap .coe-block {
   border-right: solid 1px #dce1e5;
   padding: 10px;
@@ -1410,11 +1420,13 @@ li.navicon a {
   margin-left: -360px;
   margin-top: -270px;
   transition: all 1s ease-in-out;
+  border: solid 10px #fff;
 }
 
 .parallax-feature .feature-img img {
-  height: 100%;
+  height: 120%;
   width: auto;
+  margin-left: -10%;
 }
 
 .parallax-feature .feature-img {
@@ -1636,4 +1648,37 @@ a.more-btn {
   display: inline-block;
   height: 30px;
   line-height: 30px;
+}
+
+.feature-block.content-block {
+  overflow: hidden;
+}
+
+.feature-block.content-block.parallax-img svg {
+  opacity: 0.5;
+  margin-top: -300px;
+}
+
+.for-section {
+  position: relative;
+}
+
+.for-section .parallax-img {
+  position: absolute;
+}
+
+.process-section {
+  background: #dce1e5;
+}
+
+.process-section .coe-block,
+.process-section .coe-wrap {
+  border-color: #fff;
+  border-right-color: #fff;
+}
+
+
+.process-section .coe-wrap .coe-block:after, 
+.process-section .coe-wrap .coe-block:before {
+  background: #fff;
 }
