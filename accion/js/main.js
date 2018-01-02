@@ -134,12 +134,21 @@ var Spanizer = (function() {
 
 });
 
+$('.newsletter-wrap').on('click', function(e) {
+  $(this).addClass('active');
+});
+
+
+$('.newsletter-wrap input').on('focusout', function(e) {
+  $(this).parents('.newsletter-wrap').removeClass('active');
+});
+   
+
+
 $(window).on('load', function(){
   $('.pageloader').fadeOut('300', function() {
 });
 
-
-   
 });
 
 
