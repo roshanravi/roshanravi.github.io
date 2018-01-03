@@ -21,6 +21,9 @@
 
 
 @media screen and (max-width: 1024px) {
+  .hero-banner .wave {
+    overflow: hidden;
+  }
   .nav-bar > ul > li a {
     width: 60px;
   }
@@ -276,6 +279,58 @@
   
   .logo-list-wrap .logo-col {
     width: 50%;
+  }
+
+  .feature-block .vertical-aligner > .row > .col-6 {
+    width: 100%;
+  }
+
+  .parallax-feature {
+    width: 100%;
+    margin-bottom: 30px;
+    position: static;
+  }
+
+  .feature-block.scroll-section .vertical-aligner {
+    overflow: hidden;
+  }
+
+  .feature-block .vertical-aligner .parallax-feature .feature-img {
+    width: 100%;
+    border-radius: 0;
+    height: 300px;
+    position: absolute;
+    margin: 0 !important;
+    left: 0;
+    right: 0;
+    top: auto;
+    border: solid 1px #fff;
+    top: 0;
+    z-index: -1;
+  }
+
+  .feature-block .row .col-6:last-child .parallax-feature .feature-img {
+    left: 0;
+    right: 0 !important;
+  }
+
+  .feature-block .vertical-aligner header.section-heading {
+    height: 260px;
+  }
+  .parallax-feature .feature-icon,
+  .feature-block .row .col-6:first-child .parallax-feature .feature-icon {
+    top: 20px;
+    right: 20px !important;
+    left: auto !important;
+    margin: 0 !important;
+    bottom: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+  }
+  
+  .feature-block .vertical-aligner header.section-heading h2 {
+    text-shadow: 2px 2px 1px #fff;
   }
 }
 
