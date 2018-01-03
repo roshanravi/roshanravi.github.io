@@ -24,6 +24,10 @@
   .hero-banner .wave {
     overflow: hidden;
   }
+
+  body {
+    overflow-y: hidden;
+  }
   .nav-bar > ul > li a {
     width: 60px;
   }
