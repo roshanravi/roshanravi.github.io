@@ -277,6 +277,8 @@
 
   .page-wrap {
     max-width: 100%;
+    overflow: hidden;
+    width: 100%;
   }
 
   .cta-section .column {
@@ -337,6 +339,11 @@
   
   .feature-block .vertical-aligner header.section-heading h2 {
     text-shadow: 2px 2px 1px #fff;
+  }
+
+  .global-footer .footer-col.col-3 {
+    width: 100%;
+    overflow: hidden;
   }
 }
 
