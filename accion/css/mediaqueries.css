@@ -21,6 +21,10 @@
 
 
 @media screen and (max-width: 1024px) {
+
+  .parallax-feature .feature-img {
+    border-radius: 0;
+  }
   .hero-banner .wave {
     overflow: hidden;
   }
@@ -87,9 +91,14 @@
     margin-right: -125px;
     z-index: -1;
   }
-
+  
+  .page-section.hero-banner {
+    background: url('../img/mobile-bg.svg') no-repeat;
+    background-position: center 100px;
+    background-size: 80% auto;
+  }
   .hero-banner, .slide {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
   .hero-banner .aligner {
@@ -133,13 +142,55 @@
     width: auto;
     height: 100%;
   }
+  
+  .feature-block.content-block.scroll-section {
+    padding: 0;
+  }
+
+  .feature-block.content-block.scroll-section .vertical-aligner {
+    position: relative;
+    height: 100%;
+  }
+
+  .feature-block.scroll-section .aligner {
+    padding: 60px 40px;
+  }
+
+  .feature-block .parallax-feature {
+    position: static;
+    height: 1px;
+  }
+
+  .feature-block .row .col-6:first-child .parallax-feature .feature-icon {
+    left: 30%;
+    right: auto;
+    top: 70px;
+    bottom: auto;
+  }
+
+  .feature-block .row .col-6:last-child .parallax-feature .feature-icon {
+    left: auto;
+    right: 30%;
+    top: 70px;
+    bottom: auto;
+  }
 
   .parallax-feature .feature-img {
-    margin-left: -400px;
+    position: absolute;
+    margin-left: 0;
+    border: none;
+    left: 0;
+    width: 50%;
+    top: 0;
+    bottom: -60px;
+    margin-top: 0;
+    height: auto;
   }
 
   .feature-block .row .col-6:last-child .parallax-feature .feature-img {
-    margin-right: -400px;
+    margin-right: 0;
+    left: auto;
+    right: 0;
   }
 
   .cta-block .bg-img img {
