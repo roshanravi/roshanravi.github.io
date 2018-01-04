@@ -1,4 +1,4 @@
-@media screen and (min-height: 800px) and (max-width: 1380px) {
+@media screen and (min-height: 800px) and (min-width: 1281px) {
 
   .hero-banner,
   .slide {
@@ -394,8 +394,7 @@
   .feature-block .vertical-aligner header.section-heading {
     height: 260px;
   }
-  .parallax-feature .feature-icon,
-  .feature-block .row .col-6:first-child .parallax-feature .feature-icon {
+  .parallax-feature .feature-icon {
     top: 20px;
     right: 20px !important;
     left: auto !important;
