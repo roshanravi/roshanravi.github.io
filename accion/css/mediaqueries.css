@@ -1,4 +1,4 @@
-@media screen and (min-height: 800px) {
+@media screen and (min-height: 800px) and (max-width: 1380px) {
 
   .hero-banner,
   .slide {
@@ -21,6 +21,62 @@
 
 
 @media screen and (max-width: 1024px) {
+  
+  body {
+    font-size: 13px;
+  }
+
+  .related-case-studies li h3 {
+    font-size: 13px;
+  }
+
+  .related-case-studies li {
+    width: 100%;
+    border-right: solid 1px #dce1e5;
+    padding: 10px;
+  }
+
+  .related-case-studies li:last-child {
+    display: none;
+  }
+
+  .coe-block .cb-wrap {
+    padding: 20px;
+  }
+
+  .cb-wrap .icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+  }
+
+  .cb-wrap .icon svg {
+    width: 75px;
+    height: auto;
+  }
+  
+  .process-section .page-wrap,
+  .services-section .page-wrap {
+    max-width: 650px;
+  }
+  
+  .hero-banner,
+  .slide {
+    height: 500px;
+  }
+  
+  .hero-banner h2 {
+    font-size: 60px;
+  }
+
+  .feature-block .section-heading h2.sub-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .hero-banner .mouse-anim {
+    bottom: -95px;
+  }
 
   .parallax-feature .feature-img {
     border-radius: 0;
