@@ -145,11 +145,6 @@ $(function() {
 
 
 
-  $(window).on('load', function(){
-    $('.pageloader').fadeOut('300', function() {
-  });
-
-
   $('.nav-trigger').click(function(e) {
     e.preventDefault();
     $('.main-navigation').addClass('open-nav');
