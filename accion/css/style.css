@@ -2120,3 +2120,58 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border: none;
 }
 
+.main-navigation {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  bottom: 0;
+  z-index: -900;
+  opacity: 0;
+  pointer-events: none;
+  background: #fff;
+  width: 240px;
+  -webkit-transition: all .25s linear;
+     -moz-transition: all .25s linear;
+      -ms-transition: all .25s linear;
+       -o-transition: all .25s linear;
+          transition: all .25s linear;
+}
+
+
+.mn-wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.main-navigation.open-nav {
+  opacity: 1;
+  right: 0;
+  pointer-events: all;
+  z-index: 99999;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+}
+body.nav-opened {
+  overflow: hidden;
+}
+
+body.nav-opened .canvas {
+    pointer-events: none;
+    scroll-behavior: smooth;
+    opacity: 0.2;
+}
+
+a.close-nav {
+  position: absolute;
+  left: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: #fff;
+  border: solid 1px #e84b54;
+  top: 30px;
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center;
+  color: #e84b54;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}

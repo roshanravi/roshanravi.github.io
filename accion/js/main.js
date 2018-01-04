@@ -16,30 +16,30 @@ $(function() {
 		}
 	});
 
-var Spanizer = (function() {
-    
+  var Spanizer = (function() {
+
     /**
      * Global settings
      */
-    var settings = {
+     var settings = {
       letters: $('.js-letters'),
       mast: $('.mast'),
       animateClass: 'active-slide',
     };
     
     return {
-      
+
       /**
        * Init
        */
-      init: function() {
+       init: function() {
         this.bind();
       },
       
       /**
        * Bind Events
        */
-      bind: function(){
+       bind: function(){
         // Spanize Letters
         Spanizer.doSpanize();
         // Refresh animation
@@ -49,17 +49,17 @@ var Spanizer = (function() {
        * Spanizer
        * Wraps letters in a span
        */
-      doSpanize: function(){
-      settings.letters.html(function (i, el) {
-        var spanize = $.trim(el).split("");
-        var template = '<em>' + spanize.join('</em><em>') + '</em>'
-        return template;
-      });
-    },
+       doSpanize: function(){
+        settings.letters.html(function (i, el) {
+          var spanize = $.trim(el).split("");
+          var template = '<em>' + spanize.join('</em><em>') + '</em>'
+          return template;
+        });
+      },
       /**
        * Refresh/Rerun our animation
        */
-      refreshAnimation: function(){
+       refreshAnimation: function(){
         settings.mast.removeClass(settings.animateClass);
         mast.offsetWidth = mast.offsetWidth;  
         settings.mast.addClass(settings.animateClass);
@@ -72,83 +72,95 @@ var Spanizer = (function() {
 
   /*navigation*/
 
-   var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('.top-nav').outerHeight();
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('.top-nav').outerHeight();
 
-    $(window).scroll(function(event){
-        didScroll = true;
-    });
+  $(window).scroll(function(event){
+    didScroll = true;
+  });
 
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
+  setInterval(function() {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
 
-    function hasScrolled() {
-        var st = $(this).scrollTop();
+  function hasScrolled() {
+    var st = $(this).scrollTop();
 
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
-        return;
+      return;
     
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('.top-nav').removeClass('nav-down').addClass('nav-up');
-    } else {
+      } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('.top-nav').removeClass('nav-up').addClass('nav-down');
+          $('.top-nav').removeClass('nav-up').addClass('nav-down');
         }
-    } 
-    
-        lastScrollTop = st;
+      } 
+
+      lastScrollTop = st;
     }
 
 
-   $(window).on("scroll", function () {
-    var scroll = $(window).scrollTop();
-    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-      $(".parallax-img").css('-webkit-transform', 'translate3d(0,' +  (scroll/5)  + 'px, 0)');
-    }else {
+    $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
-      $(".parallax-img").css('transform', 'translate3d(0,' +  (scroll/5)  + 'px, 0)');
-    }
+      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        $(".parallax-img").css('-webkit-transform', 'translate3d(0,' +  (scroll/5)  + 'px, 0)');
+      }else {
+        var scroll = $(window).scrollTop();
+        $(".parallax-img").css('transform', 'translate3d(0,' +  (scroll/5)  + 'px, 0)');
+      }
+    });
+
+
+    $('.parallax-feature').on('inview', function(event, isInView) {
+      if (isInView) {
+        $(this).children('.feature-img').addClass('inview');
+      } else {
+        $(this).children('.feature-img').removeClass('inview');
+      }
+    });
+
+
+
+  });
+
+  $('.newsletter-wrap').on('click', function(e) {
+    $(this).addClass('active');
   });
 
 
-   $('.parallax-feature').on('inview', function(event, isInView) {
-    if (isInView) {
-      $(this).children('.feature-img').addClass('inview');
-    } else {
-      $(this).children('.feature-img').removeClass('inview');
-    }
+  $('.newsletter-wrap input').on('focusout', function(e) {
+    $(this).parents('.newsletter-wrap').removeClass('active');
   });
 
 
 
-});
-
-$('.newsletter-wrap').on('click', function(e) {
-  $(this).addClass('active');
-});
+  $(window).on('load', function(){
+    $('.pageloader').fadeOut('300', function() {
+  });
 
 
-$('.newsletter-wrap input').on('focusout', function(e) {
-  $(this).parents('.newsletter-wrap').removeClass('active');
-});
-   
+  $('.nav-trigger').click(function(e) {
+    e.preventDefault();
+    $('.main-navigation').addClass('open-nav');
+    $('body').addClass('nav-opened');
+  });
 
-
-$(window).on('load', function(){
-  $('.pageloader').fadeOut('300', function() {
-});
-
+  $('.close-nav').click(function(e) {
+      e.preventDefault();
+    $('.main-navigation').removeClass('open-nav');
+    $('body').removeClass('nav-opened');
+  });
 });
 
 
