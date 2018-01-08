@@ -2316,3 +2316,37 @@ li:last-child {
 .main-content .aligner .align-center {
   padding: 30px;
 }
+
+
+.main-post svg#analytics_svg g {
+  transition: all 600ms cubic-bezier(.69,.04,.57,.96);
+}
+
+.main-post:hover svg#analytics_svg g#anim3 {
+  transform: translateY(-40%);
+}
+
+.main-post:hover svg#analytics_svg g#anim2 {
+  transform: translateY(-50%);
+  transition-delay: 100ms;
+}
+
+.main-post:hover svg#analytics_svg g#anim1 {
+  transform: translateY(40%);
+  transition-delay: 250ms;
+}
+
+.main-post:hover svg#analytics_svg g#anim4 {
+  transform: translateY(-40%);
+  transition-delay: 350ms;
+}
+
+.main-post:hover svg#analytics_svg g#anim5 {
+  transform: translateY(40%);
+  transition-delay: 450ms;
+}
+
+.main-post:hover svg#analytics_svg g#anim6 {
+  transform: translateY(-40%);
+  transition-delay: 550ms;
+}
