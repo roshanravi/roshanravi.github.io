@@ -1116,7 +1116,7 @@ header.top-nav {
 }
 
 .page-section {
-  padding: 30px 0;
+  padding: 0;
 }
 
 .sub-heading {
@@ -2174,4 +2174,145 @@ a.close-nav {
   text-align: center;
   color: #e84b54;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.landing-header {
+  height: 400px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.landing-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 390px;
+  bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+.landing-banner svg {
+  height: 390px;
+  width: auto;
+  vertical-align: bottom;
+}
+
+.landing-header .lh-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.landing-header .lh-wrap .row {
+  justify-content: center;
+}
+
+.landing-header .icon-col {
+  padding-top: 140px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.header-icon {
+  display: inline-block;
+  float: right;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 80px;
+  background: #fff;
+  border: solid 2px #dce1e5;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.landing-header .section-heading {
+  text-align: left;
+  padding-top: 140px;
+}
+
+.content-page {
+  position: relative;
+  z-index: +1;
+}
+
+.content-page p,
+.content-page li {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 0 0 2rem 0;
+}
+
+.aside-wrap {
+  padding: 10px;
+  background: #f4f7f9;
+  position: relative;
+  height: 100%;
+}
+
+.content-page .main-content {
+  padding: 0 20px;
+}
+
+.content-page .sidebar {
+  padding: 10px;
+  background: #fff;
+  border: solid 1px #dce1e5;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-page h2 {
+  margin-top: 0;
+}
+
+.landing-header .section-heading h1.sub-heading {
+  font-size: 52px;
+}
+
+
+.section-graphics {
+  margin: 0;
+  overflow: hidden;
+}
+
+.section-graphics img {
+  width: 100%;
+  height: auto;
+}
+
+
+.intro-section {
+  text-align: center;
+   border-bottom: solid 1px #dce1e5;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+p:last-child,
+li:last-child {
+  margin-bottom: 0;
+}
+
+.main-post {
+  padding: 0;
+}
+
+.main-post .half-thumb {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: #67717c;
+}
+
+.half-thumb img {
+  width: 80%;
+  height: auto;
+  display: inline-block;
+}
+
+.main-content .aligner .align-center {
+  padding: 30px;
 }
