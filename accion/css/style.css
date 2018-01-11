@@ -2965,9 +2965,9 @@ ul.default li > div:before {
 
 .main-content .aligner h2 {
     font-size: 2rem;
-    text-transform: uppercase;
     font-weight: 900;
     position: relative;
+    color: #e84b54;
 }
 
 
