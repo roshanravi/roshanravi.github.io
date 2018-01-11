@@ -154,16 +154,19 @@ $(function() {
       $('body').removeClass('nav-opened');
     });
 
-    $('.main-post .half-thumb').waypoint(function(direction) {
+    if (('.main-post .half-thumb').length ) {
+      $('.main-post .half-thumb').waypoint(function(direction) {
         if (direction == 'up') {
           $(this.element).removeClass("animate");
         } else {
           $(this.element).addClass("animate");
         };
-      
-    }, { offset: '30%' });
 
-  });
+      }, { offset: '30%' });
+    };
+
+    });
+  
 
 
 $(window).on('load', function(){

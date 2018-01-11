@@ -1341,7 +1341,7 @@ li.navicon a {
 
 .feature-block .vertical-aligner {
   height: 500px;
-  min-height: 80vh;
+  min-height: 65vh;
 }
 
 .feature-block {
@@ -1433,17 +1433,17 @@ li.navicon a {
 }
 
 .parallax-feature .feature-img {
-  width: 540px;
-  height: 540px;
-  border-radius: 540px;
+  width: 450px;
+  height: 450px;
+  border-radius: 450px;
   overflow: hidden;
   display: block;
   position: absolute;
   z-index: 1;
   left: 50%;
   top: 50%;
-  margin-left: -360px;
-  margin-top: -270px;
+  margin-left: -280px;
+  margin-top: -225px;
   transition: all 1s ease-in-out;
   border: solid 10px #fff;
 }
@@ -1489,7 +1489,7 @@ li.navicon a {
   left: auto;
   right: 50%;
   margin-left: auto;
-  margin-right: -360px;
+  margin-right: -280px;
 }
 
 @media screen and (min-width: 1025px) {
