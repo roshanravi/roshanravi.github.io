@@ -2946,6 +2946,21 @@ ul.default {
 ul.default li > div {
   background: #f4f7f9;
   padding: 10px;
+  padding-left: 50px;
+  position: relative;
+}
+
+ul.default li > div:before {
+  content: url("../img/icon-star.svg");
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  background: #fff;
+
 }
 
 .main-content .aligner h2 {
@@ -3030,3 +3045,26 @@ h3 span.highlight {
   margin-top: 10px;
   padding-left: 0;
 }
+
+ul.default.col-6 {
+  padding-right: 10px;
+}
+
+ul.default.col-6:last-child {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+ul.default.col-6 li:last-child{
+  border-bottom: solid 1px #dce1e5;
+}
+
+.row.multi-col-list ul.default {
+  border: none;
+}
+
+.page-section.contextual-content {
+  padding-bottom: 60px;
+}
+
+.page-section.contextual-content .coe-block
