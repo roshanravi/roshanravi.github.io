@@ -17,6 +17,16 @@ $(function() {
 		}
 	});
 
+
+  $('.cs-slider').bxSlider({
+    auto: false,
+    autoControls: true,
+    controls: true,
+    pager: true
+  });
+
+
+
   var Spanizer = (function() {
 
     /**
@@ -165,17 +175,14 @@ $(function() {
       }, { offset: '30%' });
     };
 
-    });
-  
+  });
 
 
 $(window).on('load', function(){
   setInterval(function(){
-       $('.pageloader').fadeOut();
-   }, 300);
+   $('.pageloader').fadeOut();
+ }, 300);
 });
-
-
 
 
 

@@ -2156,7 +2156,6 @@ body.nav-opened {
 
 body.nav-opened .canvas {
     pointer-events: none;
-    scroll-behavior: smooth;
     opacity: 0.2;
 }
 
@@ -2978,7 +2977,7 @@ ul.default li > div:before {
   justify-content: left;
 }
 
-.case-study-list li {
+.case-study-list > li {
   display: block;
   padding: 15px;
   border: solid 1px #dce1e5;
@@ -2987,8 +2986,8 @@ ul.default li > div:before {
   position: relative;
 }
 
-.case-study-list li:after,
-.case-study-list li:before {
+.case-study-list > li:after,
+.case-study-list > li:before {
   content: '';
     width: 4px;
     height: 4px;
@@ -2997,19 +2996,19 @@ ul.default li > div:before {
     position: absolute;
 }
 
-.case-study-list li:before {
+.case-study-list > li:before {
   left: -2px;
   top: -2px;
 }
 
 
-.case-study-list li:after {
+.case-study-list > li:after {
   right: -2px;
   bottom: -2px;
 }
 
 
-.case-study-list li .case-study-list-wrap {
+.case-study-list > li .case-study-list-wrap {
   background: #f4f7f9;
   padding: 15px;
   height: 100%;
@@ -3021,21 +3020,22 @@ ul.default li > div:before {
   margin: 0 0 15px 0;
 }
 
-.case-study-list li .casestudy-icon {
+.case-study-list > li .casestudy-icon {
   display: block;
   width: 50px;
   height: 50px;
   margin: 0 auto;
 }
 
-.case-study-list li p {
+.case-study-list > li p {
   font-size: 16px;
   margin-bottom: 16px;
 }
 
-.case-study-list li p:last-child {
+.case-study-list > li p:last-child {
   margin-bottom: 0;
 }
+
 
 h3 span.highlight {
   color: #e84b54;
@@ -3059,6 +3059,13 @@ ul.default.col-6 li:last-child{
   border-bottom: solid 1px #dce1e5;
 }
 
+
+.multi-col-list li h3 {
+  padding: 0 20px;
+  margin: 0;
+}
+
+
 .row.multi-col-list ul.default {
   border: none;
 }
@@ -3067,4 +3074,139 @@ ul.default.col-6 li:last-child{
   padding-bottom: 60px;
 }
 
-.page-section.contextual-content .coe-block
+li.full-nav-icon .txt {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.cs-slider {
+  height: 420px;
+}
+
+.case-study-list-wrap .bx-viewport {
+  height: 420px !important;
+}
+
+.case-study-list-wrap .bx-wrapper {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow:  none;
+  border: none;
+  background: transparent;
+  margin: 0;
+  position: relative;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #b1bac1;
+  position: relative;
+  margin: 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a:before,
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a:after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 2px;
+  border-radius: 2px;
+  background: #b1bac1;
+  top: 4px;
+  width: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a.active:before,
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a.active:after {
+  width: 16px;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a.active:before {
+  left: -20px;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a.active:after {
+  right: -20px;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a:before {
+  left: -17px;
+  transition: all 0.3s ease-in-out;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager a:after {
+  right: -17px;
+  transition: all 0.3s ease-in-out;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item:first-child a:before {
+  display: none;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item:last-child a::after {
+  display: none;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-pager  {
+  text-align: left;
+  bottom: 30px;
+  height: 40px;
+  left: 20px;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-controls-direction {
+  position: absolute;
+  bottom: 7px;
+  height: 40px;
+  right: 20px;
+  width: 90px;
+}
+
+.case-study-list-wrap .bx-wrapper .bx-controls-direction a.bx-next {
+  right: 0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #e84b54;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover:after,
+.bx-wrapper .bx-pager.bx-default-pager a:hover:before, 
+.bx-wrapper .bx-pager.bx-default-pager a.active:after,
+.bx-wrapper .bx-pager.bx-default-pager a.active:before,
+.bx-wrapper .bx-pager.bx-default-pager a:focus:after,
+.bx-wrapper .bx-pager.bx-default-pager a:focus:before {
+  background: #e84b54;
+}
+
+
+.row.cs-details {
+    height: 370px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 14px;
+    border: solid 1px #dce1e5;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.row.cs-details li,
+.row.cs-details p {
+  font-size: 14px;
+  margin-bottom: 1.1rem;
+  margin-top: 0;
+  line-height: 18px;
+}
+
+.cs-details h4 {
+  margin: 0 0 1rem 0;
+  font-size: 16px;
+}
+
+.main-post .page-wrap .cs-details .col-6 {
+    border: none;
+    padding: 10px;
+}
