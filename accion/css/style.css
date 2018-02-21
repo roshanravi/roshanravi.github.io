@@ -2959,23 +2959,6 @@ li:last-child {
   animation-iteration-count: infinite;
 }
 
-
-.main-post .half-thumb.animate svg > g#animatables > g {
-  animation: anim-30 3s cubic-bezier(.69,.04,.57,.96);
-  animation-iteration-count: infinite;
-}
-
-.main-post .half-thumb.animate svg > g#animatables > g:nth-child(2),
-.main-post .half-thumb.animate svg > g#animatables > g:nth-child(4) {
-  animation-delay: 500ms;
-}
-
-.main-post .half-thumb.animate svg > g#animatables > g:nth-child(3) {
-  animation: anim-100 3s cubic-bezier(.69,.04,.57,.96);
-  animation-iteration-count: infinite;
-  animation-delay: 800ms;
-}
-
 .main-post .half-thumb.animate svg > g#bubble-cloud {
   animation: anim30 3s cubic-bezier(.69,.04,.57,.96);
   animation-iteration-count: infinite;
