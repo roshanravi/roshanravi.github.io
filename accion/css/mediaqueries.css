@@ -15,19 +15,7 @@
     height: 500px;
   }
   .hero-banner h2 {
-    font-size: 50px;
-  }
-
-  .slider-wrap {
-    padding-top: 60px;
-  }
-
-  .hero-banner .typewriter .smallblack.js-letters.mast__text {
-    font-size: 28px;
-  }
-
-  .hero-banner .slider p {
-    padding-right: 5rem;
+    font-size: 62px;
   }
 }
 

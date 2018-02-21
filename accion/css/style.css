@@ -219,7 +219,7 @@ ul li {
 }
 
 .hero-banner h2 {
-	 font-size: 68px;
+	 font-size: 76px;
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase;
@@ -1321,7 +1321,6 @@ li.navicon a {
   color: #fff;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-  font-weight: 800;
 }
 
 .main-nav a:hover .cta-btn {
@@ -3315,35 +3314,4 @@ li.full-nav-icon .txt {
 
 .coe-block .cb-wrap a.more-button {
     margin-top: 15px;
-}
-
-a.main-cta {
-    border: solid 2px #e84b54;
-    padding: 10px 15px;
-    color: #e84b54;
-    margin-top: 15px;
-    display: inline-block;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 3px;
-    transition: all 0.2s ease-in-out;
-}
-
-a.main-cta:hover {
-  background: #e84b54;
-  border: solid 2px #e84b54;
-  color: #fff;
-}
-
-.section-heading p {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    padding: 0 6rem;
-}
-
-.hero-banner .slider p {
-  margin-bottom: 1rem;
-  margin-top: 1.2rem;
-  font-weight: 600;
 }
